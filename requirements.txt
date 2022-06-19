@@ -11,3 +11,9 @@ youtube_search
 wmi
 geopy
 googletrans
+pywhatkit
+flask
+gtts
+pipwin
+portaudio
+pyaudio
