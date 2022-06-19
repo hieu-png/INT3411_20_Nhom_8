@@ -15,5 +15,3 @@ pywhatkit
 flask
 gtts
 pipwin
-portaudio
-pyaudio
