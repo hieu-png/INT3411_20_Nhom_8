@@ -22,13 +22,13 @@ Các chức năng:
 
 1. Cài đặt các thư viện:
 
-_pip install -r requirements.txt_ 
+    _pip install -r requirements.txt_ 
 
-_pip install lib/PyAudio-0.2.11-cp310-cp310-win_amd64.whl__
-Phiên bản của file PyAudio tùy thuộc vào phiên bản của python
+    _pip install lib/PyAudio-0.2.11-cp310-cp310-win_amd64.whl__
+    Phiên bản của file PyAudio tùy thuộc vào phiên bản của python
 2. Chạy ứng dụng
 
-_python GUIASSISTANT.py_
+    _python GUIASSISTANT.py_
 
 
 ## Thành viên
