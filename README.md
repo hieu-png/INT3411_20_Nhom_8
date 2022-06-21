@@ -46,8 +46,6 @@ Bài tập lớn nhóm 8 môn học xử lý tiếng nói
 
 - Tìm kiếm trên youtube
 
-- Gửi email
-
 - Xem thời tiết
 
 ![github_preview/img_5.png](github_preview/img_5.png)
@@ -61,6 +59,15 @@ Bài tập lớn nhóm 8 môn học xử lý tiếng nói
 - Truyện cười
 
 ![github_preview/img_8.png](github_preview/img_8.png)
+
+## Dữ liệu nhận vào
+
+- Sóng âm thanh nhận được khi người dùng nói
+
+
+## Phương pháp
+
+
 
 
 ## Thành viên
@@ -78,7 +85,15 @@ Lê Bá Gia Huy
 Frontend: Nguyễn Thế Hoàng
 
 Backend: 
+
 - Nguyễn Trung Hiếu
+
+Các chức năng đã làm:
+
 - Lê Bá Gia Huy
+
+Các chức năng đã làm:
+
 - Mai Công Danh
 
+Các chức năng đã làm:
