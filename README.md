@@ -32,6 +32,14 @@ Khi mức năng lượng đó quá một ngưỡng nào đó thì cả luồng �
 
 Sau thu âm giọng nói xong file âm thanh được gửi cho api của google để xử lý và nhóm sẽ lấy kết quả nhận được đó để tạo ra các chức năng của phần mềm. Sample rate của sẽ được đảm bảo hơn 8 kHz và kích thước hơn 16kb bởi chương trình trước khi gửi.
 
+- Mô hình mà google đã sử dụng là: 
+
+![github_preview/Show.png](github_preview/Show.png)
+
+Với P(A|W) là mô hình âm thanh theo Hidden Markov Model
+
+P(W) là mô hình ngôn ngữ theo Markov Chain
+
 - Các thuật toán mà google dùng để nhận dạng giọng nói là:
 
 PLP features
@@ -51,6 +59,9 @@ WFST (weighted finite-state transducers) framework
 
 ![github_preview/WFST.png](github_preview/WFST.png)
 
+- Tập dữ liệu training của model mà google đã sử dụng bao gồm lời nói với phiên âm kéo dài tới tận 87.000 giờ được lấy từ log của tính năng Voice Search. Tập dữ liệu có frame-rate là 100hz.
+
+Nguồn: https://storage.googleapis.com/pub-tools-public-publication-data/pdf/41133.pdf
 
 # Các chức năng:
 
