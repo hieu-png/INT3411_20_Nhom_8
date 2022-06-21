@@ -69,7 +69,7 @@ def reply(query):
 
     return choice(response)
 
-
+# dich
 def lang_translate(text):
     # print(language)
     from googletrans import Translator, LANGUAGES
