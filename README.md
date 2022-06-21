@@ -2,7 +2,7 @@
 Bài tập lớn nhóm 8 môn học xử lý tiếng nói
 
 ## Sản phẩm
-Ứng dụng trợ lý ảo với các chức năng hỗ trợ người sử dụng bằng giọng nói sử dụng 
+Ứng dụng trợ lý ảo với các chức năng hỗ trợ người dùng bằng giọng nói sử dụng Tkinter và OpenCV
 
 Các chức năng:
 
@@ -43,8 +43,9 @@ Các chức năng:
 
 ![img_8.png](img_8.png)
 
-## Cách cài đặt
 
+
+## Cách cài đặt
 1. Cài đặt các thư viện:
 
     _pip install -r requirements.txt_ 
@@ -62,6 +63,45 @@ Các chức năng:
 2. Chạy ứng dụng
 
     _python GUIASSISTANT.py_
+
+## Các chức năng:
+
+- Trò chuyện cơ bản
+
+![github_preview/img_3.png](github_preview/img_3.png)
+
+![github_preview/img_2.png](github_preview/img_2.png)
+
+![github_preview/img_1.png](github_preview/img_1.png)
+
+
+- Tìm kiếm bằng webScraping
+
+![github_preview/img_4.png](github_preview/img_4.png)
+
+![github_preview/img_9.png](github_preview/img_9.png)
+
+- Chỉ đường bằng google map
+
+- Dịch
+
+- Tìm kiếm trên youtube
+
+- Gửi email
+
+- Xem thời tiết
+
+![github_preview/img_5.png](github_preview/img_5.png)
+
+- Máy tính 
+
+![github_preview/img_6.png](github_preview/img_6.png)
+
+![github_preview/img_7.png](github_preview/img_7.png)
+
+- Truyện cười
+
+![github_preview/img_8.png](github_preview/img_8.png)
 
 
 ## Thành viên
