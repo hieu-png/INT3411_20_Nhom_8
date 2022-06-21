@@ -27,18 +27,18 @@ Bài tập lớn nhóm 8 môn học xử lý tiếng nói
 
 - Trò chuyện cơ bản
 
-![img_3.png](img_3.png)
+![github_preview/img_3.png](github_preview/img_3.png)
 
-![img_2.png](img_2.png)
+![github_preview/img_2.png](github_preview/img_2.png)
 
-![img_1.png](img_1.png)
+![github_preview/img_1.png](github_preview/img_1.png)
 
 
 - Tìm kiếm bằng webScraping
 
-![img_4.png](img_4.png)
+![github_preview/img_4.png](github_preview/img_4.png)
 
-![img_9.png](img_9.png)
+![github_preview/img_9.png](github_preview/img_9.png)
 
 - Chỉ đường bằng google map
 
@@ -50,17 +50,17 @@ Bài tập lớn nhóm 8 môn học xử lý tiếng nói
 
 - Xem thời tiết
 
-![img_5.png](img_5.png)
+![github_preview/img_5.png](github_preview/img_5.png)
 
 - Máy tính 
 
-![img_6.png](img_6.png)
+![github_preview/img_6.png](github_preview/img_6.png)
 
-![img_7.png](img_7.png)
+![github_preview/img_7.png](github_preview/img_7.png)
 
 - Truyện cười
 
-![img_8.png](img_8.png)
+![github_preview/img_8.png](github_preview/img_8.png)
 
 
 ## Thành viên
