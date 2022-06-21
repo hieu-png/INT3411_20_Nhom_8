@@ -328,12 +328,12 @@ def main(text):
             destinationPoint = record(False, False)
             speak("Vâng " + ownerDesignation + ", đang lấy dữ liệu...", True)
             try:
-                distance = webScrapping.give_direction_from_to(startingPoint, destinationPoint)
+                distance = webScrapping.web_give_direction_from_to(startingPoint, destinationPoint)
                 speak('Quãng đường ngài phải đi là ' + distance, True)
             except:
                 speak("Vị trí không phù hợp, ngài hãy thử lại!")
         else:
-            webScrapping.maps(text)
+            webScrapping.weB_maps(text)
             speak('Của ngài đây...', True, True)
         return
 
@@ -413,7 +413,7 @@ def main(text):
     else:
         speak("Panda không hiểu ngài... ", True, True)
         speak("Đây là thứ tôi tìm được trên web... ", True, True)
-        webScrapping.search_google(text)  # uncomment this if you want to show the result on web, means if nothing found
+        webScrapping.web_search_google(text)  # uncomment this if you want to show the result on web, means if nothing found
 
 
 ##################################### DELETE USER ACCOUNT #########################################

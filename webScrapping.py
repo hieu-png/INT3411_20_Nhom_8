@@ -23,13 +23,13 @@ def find_thing_on_wiki(query):
 		return "Desired Result Not Found"
 
 
-def maps(text):
+def weB_maps(text):
 	text = text.replace('maps', '')
 	text = text.replace('map', '')
 	text = text.replace('google', '')
 	website_open('https://www.google.com/maps/place/'+text)
 
-def give_direction_from_to(startingPoint, destinationPoint):
+def web_give_direction_from_to(startingPoint, destinationPoint):
 
 	geolocator = Nominatim(user_agent='assistant')
 	if 'tại đây' in startingPoint:
@@ -54,7 +54,7 @@ def website_open(url='https://www.google.com/'):
 	webbrowser.open(url)
 
 
-def youtube(query):
+def web_open_youtube(query):
 	from youtube_search import YoutubeSearch
 	query = query.replace('play',' ')
 	query = query.replace('on youtube',' ')
@@ -64,7 +64,7 @@ def youtube(query):
 	return "Enjoy Sir..."
 
 
-def search_google(query):
+def web_search_google(query):
 	if 'image' in query:
 		query += "&tbm=isch"
 	query = query.replace('images','')

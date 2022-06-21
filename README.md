@@ -111,6 +111,12 @@ Backend:
 
 - Nguyễn Trung Hiếu
 
+Bản đồ https://youtu.be/XOoF3z5vrkI
+
+Chỉ đường trên bản đồ https://youtu.be/WDBXBkExfKo
+
+Tìm kiếm google đơn giản https://youtu.be/ZlmLjy8hNfY
+
 - Lê Bá Gia Huy
 
 - Mai Công Danh
