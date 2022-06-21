@@ -16,19 +16,26 @@ Các chức năng:
 - Máy tính 
 - Xem tin tức
 - Truyện cười
-- Chơi game(?)
-- 
-## Cái cài đặt
+
+## Cách cài đặt
 
 1. Cài đặt các thư viện:
 
-_pip install -r requirements.txt_ 
+    _pip install -r requirements.txt_ 
 
-_pip install lib/PyAudio-0.2.11-cp310-cp310-win_amd64.whl__
-Phiên bản của file PyAudio tùy thuộc vào phiên bản của python
+
+    Vào https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio. Chọn và tải phiên bản đúng với phiên bản python đang chạy (python --version) và chạy 
+    
+    _pip install [đường dẫn đến file]_
+
+    Ví dụ python 3.10
+
+    _pip install lib/PyAudio-0.2.11-cp310-cp310-win_amd64.whl__
+
+    
 2. Chạy ứng dụng
 
-_python GUIASSISTANT.py_
+    _python GUIASSISTANT.py_
 
 
 ## Thành viên
@@ -44,3 +51,4 @@ Backend:
 - Nguyễn Trung Hiếu
 - Lê Bá Gia Huy
 - Mai Công Danh
+

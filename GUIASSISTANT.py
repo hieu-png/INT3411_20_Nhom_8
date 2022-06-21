@@ -401,6 +401,7 @@ def main(text):
         speak(result)
         return
 
+
     if isContain(text, ['giờ', 'ngày']):
         speak(choice(opening_text))
         speak(normalChat.chat(text), True, True)
