@@ -36,3 +36,11 @@ Nguyễn Trung Hiếu 19021271
 Mai Công Danh 19021233
 Nguyễn Thế Hoàng 19021283
 Lê Bá Gia Huy 
+
+## Phân chia công việc
+3 backend - 1 frontend
+Frontend: Nguyễn Thế Hoàng
+Backend: 
+- Nguyễn Trung Hiếu
+- Lê Bá Gia Huy
+- Mai Công Danh

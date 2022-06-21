@@ -354,9 +354,9 @@ def main(text):
     if isContain(text, ['phân số', 'log', 'giá trị của', 'tính', ' + ', ' - ', ' x ', 'nhân', 'chia', 'nhị phân',
                         'thập lục phân', 'thập phân', 'cotan', 'sin ', 'cos ', 'tan ']):
         speak(choice(opening_text))
-        text.lower
+        var = text.lower
         try:
-            speak(('Kết quả là: ' + math_function.perform(text)), True, True)
+            speak(('Kết quả là: ' + math_function.calculate(text)), True, True)
             return
         except Exception as e:
             return
@@ -399,20 +399,6 @@ def main(text):
         speak('Đang tìm kiếm...', True, True)
         result = webScrapping.wikiResult(text)
         speak(result)
-        return
-
-    if isContain(text, ['chơi game']):
-        speak("Ngài có muốn chơi game online không?", True, True)
-        text = record()
-        if text == "None":
-            speak("Ngài nói lại được không?", True, True)
-            return
-        if 'có' in text:
-            speak("Vâng " + ownerDesignation + ", ngài hãy chơi một số game online ", True, True)
-            webScrapping.openWebsite('https://www.agame.com/games/mini-games/')
-            return
-        if isContain(text, ["không"]):
-            speak("Không sao " + ownerDesignation + ", chúng ta có thể chơi vào lần sau.", True, True)
         return
 
     if isContain(text, ['giờ', 'ngày']):

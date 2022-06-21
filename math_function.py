@@ -16,7 +16,7 @@ def basicOperations(text):
 	result = eval(text)
 
 	return round(result,2)
-
+# dich bit
 def bitwiseOperations(text):
 	if 'right shift' in text:
 		temp = text.rfind(' ')
@@ -33,7 +33,7 @@ def bitwiseOperations(text):
 	text = text.replace('xor', '^')
 	result = eval(text)
 	return result
-
+# he co so 8,10,2
 def conversions(text):
 	temp = text.rfind(' ')
 	num = int(text[temp+1:])
@@ -43,7 +43,7 @@ def conversions(text):
 		return eval('hex(num)')[2:]
 	elif 'thập phân' in text:
 		return eval('oct(num)')[2:]
-
+# sin cos tan
 def trigonometry(text):
 	temp = text.replace('độ','\n')
 	temp = text.rfind(' ')
@@ -56,10 +56,11 @@ def trigonometry(text):
 	elif 'tan' in text:
 		return round(math.tan(rad),2)
 
+# giai thua
 def factorial(n):
 	if n==1 or n==0: return 1
 	else: return n*factorial(n-1)
-
+# logarit
 def logFind(text):
 	temp = text.rfind(' ')
 	num = int(text[temp+1:])
@@ -70,8 +71,8 @@ def isHaving(text, lst):
 		if word in text:
 			return True
 	return False
-
-def perform(text):
+# ham thuc thi phep tinh
+def calculate(text):
 	text = text.replace('math','')
 	if "phân số" in text: return str(factorial(int(text[text.rfind(' ')+1:])))
 	elif isHaving(text, ['sin','cos','tan']): return str(trigonometry(text))
@@ -79,5 +80,3 @@ def perform(text):
 	elif isHaving(text, ['shift','and','or','not']): return str(bitwiseOperations(text))
 	elif 'log' in text: return str(logFind(text))
 	else: return str(basicOperations(text))
-
-# print(round(math.log(1,10),2))
