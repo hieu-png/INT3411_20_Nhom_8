@@ -2,7 +2,7 @@
 Bài tập lớn nhóm 8 môn học xử lý tiếng nói
 
 ## Sản phẩm
-Ứng dụng trợ lý ảo với các chức năng hỗ trợ người sử dụng bằng giọng nói
+Ứng dụng trợ lý ảo với các chức năng hỗ trợ người sử dụng bằng giọng nói sử dụng 
 
 Các chức năng:
 
