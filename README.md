@@ -5,7 +5,9 @@ Bài tập lớn nhóm 8 môn học xử lý tiếng nói
 Ứng dụng trợ lý ảo với các chức năng hỗ trợ người sử dụng bằng giọng nói
 
 Các chức năng:
+
 - Trò chuyện cơ bản
+
 ![img_3.png](img_3.png)
 
 ![img_2.png](img_2.png)
@@ -14,6 +16,7 @@ Các chức năng:
 
 
 - Tìm kiếm bằng webScraping
+
 ![img_4.png](img_4.png)
 
 ![img_9.png](img_9.png)
@@ -27,14 +30,17 @@ Các chức năng:
 - Gửi email
 
 - Xem thời tiết
+
 ![img_5.png](img_5.png)
 
 - Máy tính 
+
 ![img_6.png](img_6.png)
 
 ![img_7.png](img_7.png)
 
 - Truyện cười
+
 ![img_8.png](img_8.png)
 
 ## Cách cài đặt
