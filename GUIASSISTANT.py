@@ -401,19 +401,7 @@ def main(text):
         speak(result)
         return
 
-    if isContain(text, ['chơi game']):
-        speak("Ngài có muốn chơi game online không?", True, True)
-        text = record()
-        if text == "None":
-            speak("Ngài nói lại được không?", True, True)
-            return
-        if 'có' in text:
-            speak("Vâng " + ownerDesignation + ", ngài hãy chơi một số game online ", True, True)
-            webScrapping.openWebsite('https://www.agame.com/games/mini-games/')
-            return
-        if isContain(text, ["không"]):
-            speak("Không sao " + ownerDesignation + ", chúng ta có thể chơi vào lần sau.", True, True)
-        return
+
 
     if isContain(text, ['giờ', 'ngày']):
         speak(choice(opening_text))
