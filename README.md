@@ -82,16 +82,16 @@ Nguồn: https://storage.googleapis.com/pub-tools-public-publication-data/pdf/41
 
 - Chỉ đường bằng google map
 
-![img.png](img.png)
+![img.png](github_preview/img10.png)
 
-![img_1.png](img_1.png)
+![img_1.png](github_preview/img_11.png)
 
 
 - Tìm kiếm trên youtube
 
-![img_3.png](img_3.png)
+![img_3.png](github_preview/img_13.png)
 
-![img_2.png](img_2.png)
+![img_2.png](github_preview/img_12.png)
 
 - Xem thời tiết
 
