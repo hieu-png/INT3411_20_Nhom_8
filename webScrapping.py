@@ -13,7 +13,7 @@ sys.stdout.buffer.write(chr(9986).encode('utf8'))
 
 EMAIL = 'lhuy4831@gmail.com'
 PASSWORD = '0377909471'
-def wikiResult(query):
+def find_thing_on_wiki(query):
 	query = query.replace('wikipedia','')
 	query = query.replace('tìm kiếm','')
 	if len(query.split())==0: query = "wikipedia"
@@ -23,13 +23,13 @@ def wikiResult(query):
 		return "Desired Result Not Found"
 
 
-def maps(text):
+def weB_maps(text):
 	text = text.replace('maps', '')
 	text = text.replace('map', '')
 	text = text.replace('google', '')
-	openWebsite('https://www.google.com/maps/place/'+text)
+	website_open('https://www.google.com/maps/place/'+text)
 
-def giveDirections(startingPoint, destinationPoint):
+def web_give_direction_from_to(startingPoint, destinationPoint):
 
 	geolocator = Nominatim(user_agent='assistant')
 	if 'tại đây' in startingPoint:
@@ -43,30 +43,18 @@ def giveDirections(startingPoint, destinationPoint):
 	startingPoint = startinglocation.address.replace(' ', '+')
 	destinationPoint = destinationlocation.address.replace(' ', '+')
 
-	openWebsite('https://www.google.co.in/maps/dir/'+startingPoint+'/'+destinationPoint+'/')
+	website_open('https://www.google.co.in/maps/dir/'+startingPoint+'/'+destinationPoint+'/')
 
 	startinglocationCoordinate = (startinglocation.latitude, startinglocation.longitude)
 	destinationlocationCoordinate = (destinationlocation.latitude, destinationlocation.longitude)
 	total_distance = great_circle(startinglocationCoordinate, destinationlocationCoordinate).km #.mile
 	return str(round(total_distance, 2)) + 'KM'
 
-def openWebsite(url='https://www.google.com/'):
+def website_open(url='https://www.google.com/'):
 	webbrowser.open(url)
 
-def jokes():
-	URL = 'https://icanhazdadjoke.com/'
-	result = requests.get(URL)
-	src = result.content
 
-	soup = BeautifulSoup(src, 'html.parser')
-
-	try:
-		p = soup.find('p')
-		return p.text
-	except Exception as e:
-		raise e
-
-def youtube(query):
+def web_open_youtube(query):
 	from youtube_search import YoutubeSearch
 	query = query.replace('play',' ')
 	query = query.replace('on youtube',' ')
@@ -76,7 +64,7 @@ def youtube(query):
 	return "Enjoy Sir..."
 
 
-def googleSearch(query):
+def web_search_google(query):
 	if 'image' in query:
 		query += "&tbm=isch"
 	query = query.replace('images','')
@@ -86,17 +74,4 @@ def googleSearch(query):
 	webbrowser.open("https://www.google.com/search?q=" + query)
 	return "Here you go..."
 
-
-def email(rec_email=None, text="Hello, It's P.A.N.D.A here...", sub='P.A.N.D.A'):
-	if '@gmail.com' not in rec_email: return 1
-	text=text.encode('ascii', 'ignore').decode('ascii')
-	sub=sub.encode('ascii', 'ignore').decode('ascii')
-	s = smtplib.SMTP('smtp.gmail.com', 587)
-	s.starttls()
-	s.login(EMAIL, PASSWORD)
-	message = 'Subject: {}\n\n{}'.format(sub, text)
-	s.sendmail(EMAIL, rec_email, message)
-	print("Sent")
-	s.quit()
-	return 0
 

@@ -310,20 +310,6 @@ def main(text):
             speak(on_os.search_on_wikipedia(text))
         return
 
-    if 'email' in text:
-        speak('Ngài muốn gửi email tới ai?', True, True)
-        WAEMPOPUP("Email", "E-mail Address")
-        attachTOframe(rec_email)
-        speak('Tiêu đề là gì ạ?', True)
-        subject = record(False, False)
-        speak('Nội dung ngài muốn gửi ?', True)
-        message = record(False, False)
-
-        speak(choice(opening_text))
-        # Thread(target=webScrapping.email, args=(rec_email,message,subject,) ).start()
-        print(webScrapping.email(rec_email, message, subject))
-        speak('Email đã được gửi', True)
-        return
 
     if isContain(text, ['youtube', 'video']):
         speak(f'Ngài muốn xem gì trên Youtube ạ?', True)
@@ -342,12 +328,12 @@ def main(text):
             destinationPoint = record(False, False)
             speak("Vâng " + ownerDesignation + ", đang lấy dữ liệu...", True)
             try:
-                distance = webScrapping.giveDirections(startingPoint, destinationPoint)
+                distance = webScrapping.web_give_direction_from_to(startingPoint, destinationPoint)
                 speak('Quãng đường ngài phải đi là ' + distance, True)
             except:
                 speak("Vị trí không phù hợp, ngài hãy thử lại!")
         else:
-            webScrapping.maps(text)
+            webScrapping.weB_maps(text)
             speak('Của ngài đây...', True, True)
         return
 
@@ -362,11 +348,6 @@ def main(text):
             return
         return
 
-    if "truyện cười" in text or "chuyện cười" in text:
-        speak(choice(opening_text))
-        speak('Đây ạ...', True, True)
-        speak(webScrapping.jokes(), True)
-        return
 
     if isContain(text, ['tin tức']):
         speak(f"Ngài muốn đọc tin về gì.", True, True)
@@ -397,7 +378,7 @@ def main(text):
     if isContain(text, ['wiki', 'là ai']):
         speak(choice(opening_text))
         speak('Đang tìm kiếm...', True, True)
-        result = webScrapping.wikiResult(text)
+        result = webScrapping.find_thing_on_wiki(text)
         speak(result)
         return
 
@@ -432,7 +413,7 @@ def main(text):
     else:
         speak("Panda không hiểu ngài... ", True, True)
         speak("Đây là thứ tôi tìm được trên web... ", True, True)
-        webScrapping.googleSearch(text)  # uncomment this if you want to show the result on web, means if nothing found
+        webScrapping.web_search_google(text)  # uncomment this if you want to show the result on web, means if nothing found
 
 
 ##################################### DELETE USER ACCOUNT #########################################
