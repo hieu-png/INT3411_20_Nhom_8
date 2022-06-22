@@ -34,7 +34,7 @@ Sau thu âm giọng nói xong file âm thanh được gửi cho api của google
 
 - Mô hình mà google đã sử dụng là: 
 
-![github_preview/Show.png](github_preview/Show.png)
+![github_preview/Show.png](github_preview/Show.PNG)
 
 Với P(A|W) là mô hình âm thanh theo Hidden Markov Model
 
