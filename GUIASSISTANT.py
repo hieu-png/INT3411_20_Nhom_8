@@ -7,7 +7,7 @@ EXIT_COMMANDS = ['tạm biệt', 'thoát', 'dừng chương trình', 'tắt chư
 language = 'vi'
 
 ownerName = "Lý Tuấn Huy"
-ownerDesignation = "Ngài"
+ownerDesignation = "bạn"
 ownerPhoto = "1"
 rec_email, rec_phoneno = "", ""
 WAEMEntry = None
@@ -303,7 +303,20 @@ def main(text):
         else:
             speak(on_os.search_on_wikipedia(text))
         return
-
+        
+    if 'email' in text:
+        speak('Ngài muốn gửi email tới ai?', True, True)
+        WAEMPOPUP("Email", "E-mail Address")
+        attachTOframe(rec_email)
+        speak('Tiêu đề là gì ạ?', True)
+        subject = record(False, False)
+        speak('Nội dung ngài muốn gửi ?', True)
+        message = record(False, False)
+        speak(choice(opening_text))
+        # Thread(target=webScrapping.email, args=(rec_email,message,subject,) ).start()
+        print(webScrapping.email(rec_email, message, subject))
+        speak('Email đã được gửi', True)
+        return
 
     if isContain(text, ['youtube', 'video']):
         speak(f'Ngài muốn xem gì trên Youtube ạ?', True)

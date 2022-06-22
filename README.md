@@ -40,6 +40,11 @@ Với P(A|W) là mô hình âm thanh theo Hidden Markov Model
 
 P(W) là mô hình ngôn ngữ theo Markov Chain
 
+Mô hình đầu ra sẽ sử dụng thêm mô hình âm học GMM hay Gaussian mixture model
+
+![github_preview/GMM.png](github_preview/GMM.PNG)
+
+
 - Các thuật toán mà google dùng để nhận dạng giọng nói là:
 
 PLP features
@@ -49,6 +54,7 @@ PLP features
 Viterbi search
 
 ![github_preview/Viterbi.png](github_preview/Viterbi.png)
+
 
 
 Deep Neural Networks

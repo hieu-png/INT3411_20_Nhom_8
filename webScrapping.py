@@ -75,3 +75,16 @@ def web_search_google(query):
 	return "Here you go..."
 
 
+def email(rec_email=None, text="Hello, It's P.A.N.D.A here...", sub='P.A.N.D.A'):
+	if '@gmail.com' not in rec_email:
+		return 1
+	text = text.encode('ascii', 'ignore').decode('ascii')
+	sub = sub.encode('ascii', 'ignore').decode('ascii')
+	s = smtplib.SMTP('smtp.gmail.com', 587)
+	s.starttls()
+	s.login(EMAIL, PASSWORD)
+	message = 'Subject: {}\n\n{}'.format(sub, text)
+	s.sendmail(EMAIL, rec_email, message)
+	print("Sent")
+	s.quit()
+	return 0
