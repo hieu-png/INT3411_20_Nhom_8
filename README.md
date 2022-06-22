@@ -82,9 +82,16 @@ Nguồn: https://storage.googleapis.com/pub-tools-public-publication-data/pdf/41
 
 - Chỉ đường bằng google map
 
-- Dịch
+![img.png](img.png)
+
+![img_1.png](img_1.png)
+
 
 - Tìm kiếm trên youtube
+
+![img_3.png](img_3.png)
+
+![img_2.png](img_2.png)
 
 - Xem thời tiết
 
@@ -100,7 +107,11 @@ Nguồn: https://storage.googleapis.com/pub-tools-public-publication-data/pdf/41
 
 ![github_preview/img_8.png](github_preview/img_8.png)
 
+Bản đồ https://youtu.be/XOoF3z5vrkI
 
+Chỉ đường trên bản đồ https://youtu.be/WDBXBkExfKo
+
+Tìm kiếm google đơn giản https://youtu.be/ZlmLjy8hNfY
 
 
 
@@ -121,12 +132,6 @@ Frontend: Nguyễn Thế Hoàng
 Backend: 
 
 - Nguyễn Trung Hiếu
-
-Bản đồ https://youtu.be/XOoF3z5vrkI
-
-Chỉ đường trên bản đồ https://youtu.be/WDBXBkExfKo
-
-Tìm kiếm google đơn giản https://youtu.be/ZlmLjy8hNfY
 
 - Lê Bá Gia Huy
 

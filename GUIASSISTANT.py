@@ -248,30 +248,24 @@ def main(text):
             speak('Vậy tôi giúp được gì cho ngài ạ!', True, True)
         return
 
-    if 'giọng' in text and 'hay' in text:
-        speak(choice(voice), True)
-        return
-    if 'bạn' in text and 'hài hước' in text:
-        speak(choice(funny), True)
-        return
 
-    if "dịch" in text:
-        speak("Ngài muốn dịch gì ạ?", True, True)
-        sentence = record(False, False)
-        # speak("Ngài muốn dịch sang ngôn ngữ gì?", True)
-        # language = record(False, False)
-        speak(choice(opening_text))
-        result = normalChat.lang_translate(sentence)
-        if result == "None":
-            speak("Không có ngôn ngữ như thế ạ", True)
-            return
-        else:
-            speak(result.pronunciation)
-            speak(f"Trong tiếng Việt ngài sẽ nói:", True)
-            # attachTOframe(result.text, True)
-
-            speak(result.text, True)
-        return
+    # if "dịch" in text:
+    #     speak("Ngài muốn dịch gì ạ?", True, True)
+    #     sentence = record(False, False)
+    #     # speak("Ngài muốn dịch sang ngôn ngữ gì?", True)
+    #     # language = record(False, False)
+    #     speak(choice(opening_text))
+    #     result = normalChat.lang_translate(sentence)
+    #     if result == "None":
+    #         speak("Không có ngôn ngữ như thế ạ", True)
+    #         return
+    #     else:
+    #         speak(result.pronunciation)
+    #         speak(f"Trong tiếng Việt ngài sẽ nói:", True)
+    #         # attachTOframe(result.text, True)
+    #
+    #         speak(result.text, True)
+    #     return
 
     if 'danh sách' in text:
         if isContain(text, ['thêm', 'tạo', 'thực hiện']):
